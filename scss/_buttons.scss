@@ -42,3 +42,16 @@
     background: $primary-color;
   }
 }
+
+.more-tag__btn {
+  padding: 0.5rem 1rem;
+  background: $light-blue-btn;
+  color: $primary-color;
+  font-weight: 500;
+  transition: all 250ms ease-in;
+
+  &:hover {
+    background: $primary-color;
+    color: $white-color;
+  }
+}

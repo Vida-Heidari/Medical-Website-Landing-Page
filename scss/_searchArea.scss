@@ -77,6 +77,11 @@
           flex-direction: row;
           gap: 1rem;
           align-items: center;
+          transition: 300ms;
+
+          &:hover {
+            color: $primary-color;
+          }
 
           i {
             cursor: pointer;

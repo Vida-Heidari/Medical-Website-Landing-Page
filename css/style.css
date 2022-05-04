@@ -354,3 +354,98 @@ i {
 #serach__area .search__area--wrapper .tags .search-area__tags li i {
   cursor: pointer;
 }
+
+#popular-search-area {
+  padding: 3rem 0;
+}
+
+#popular-search-area .popular-search__wrapper h2 {
+  font-size: clamp(1rem, 5vw, 4.5rem);
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+#popular-search-area .popular-search__wrapper .popular-search__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#popular-search-area .popular-search__wrapper .popular-search__lists {
+  border-right: 2px solid red;
+  width: 8%;
+}
+
+#popular-search-area .popular-search__wrapper .popular-search__lists .search__list {
+  margin: 1.6rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #d9dddc;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#popular-search-area .popular-search__wrapper .popular-search__lists .search__list:nth-of-type(1) {
+  color: #102851;
+}
+
+#popular-search-area .popular-search__wrapper .popular-search__lists .search__list:hover {
+  color: #102851;
+}
+
+#popular-search-area .popular-search__wrapper .popular-search__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+
+#popular-search-area .popular-search__wrapper .popular-search__items img {
+  width: 4.8rem;
+}
+
+#popular-search-area .popular-search__wrapper .popular-search__items .box {
+  width: 20rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #fdfdfd), to(#fff));
+  background: linear-gradient(to top right, #fdfdfd 30%, #fff);
+  -webkit-box-shadow: 0.5rem 0.3rem 2rem 0.5rem #eff4ff;
+          box-shadow: 0.5rem 0.3rem 2rem 0.5rem #eff4ff;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+#popular-search-area .popular-search__wrapper .popular-search__items .box h5 {
+  font-size: 1.5rem;
+}
+
+#popular-search-area .popular-search__wrapper .popular-search__items .box:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  color: #014ed5;
+}

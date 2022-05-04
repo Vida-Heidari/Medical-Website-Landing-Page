@@ -391,8 +391,8 @@ i {
   font-size: 1.5rem;
   font-weight: 600;
   color: #d9dddc;
-  -webkit-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 #popular-search-area .popular-search__wrapper .popular-search__lists .search__list:nth-of-type(1) {
@@ -441,7 +441,7 @@ i {
 }
 
 #popular-search-area .popular-search__wrapper .popular-search__items .box h5 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 #popular-search-area .popular-search__wrapper .popular-search__items .box:hover {

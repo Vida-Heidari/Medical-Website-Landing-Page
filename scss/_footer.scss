@@ -1,0 +1,82 @@
+#footer {
+  .footer__wrapper {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(5, minmax(auto, 1fr));
+    grid-template-rows: 1fr;
+    gap: 2rem;
+
+    padding: 3rem 1.5rem;
+
+    .footer__about {
+      grid-area: 1 / 1 / 2 / 2;
+      img {
+        width: Max(20rem, 10rem);
+      }
+
+      h3 {
+        font-size: $font-size-lg;
+      }
+
+      p {
+        font-size: clamp(0.5rem, 4vw, 1.5rem);
+        color: $light-text-color;
+      }
+
+      .footer__about--social-media {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        i {
+          margin-right: 1rem;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          padding: 1.2rem;
+          border: 2px solid $light-blue;
+          color: $primary-color;
+          transition: 300ms ease-in-out;
+
+          &:hover {
+            color: $white-color;
+            background-color: $primary-color;
+            box-shadow: 0 0.5rem 3rem 0.1rem $light-blue;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    ul {
+      font-size: $font-size-sm;
+      line-height: 4.8rem;
+    }
+
+    a {
+      padding-bottom: 0.5rem;
+      transition: 300ms;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    .footer__patient {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .footer__provider {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .footer__partner {
+      grid-area: 1 / 4 / 2 / 5;
+    }
+
+    .footer__company {
+      grid-area: 1 / 5 / 2 / 6;
+    }
+  }
+}

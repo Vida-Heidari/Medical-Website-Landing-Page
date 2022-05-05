@@ -21,38 +21,13 @@
   }
 }
 
-.hero__btns {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-}
-
-.hero__btn {
+.btn__secondary {
+  font-size: clamp(0.5rem, 4vw, 1.3rem);
+  padding: clamp(0.5rem, 3vmin, 1.5rem);
   background: $secondary-color;
   transition: background 250ms ease-in;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: clamp(0.5rem, 3vmin, 1.5rem);
-  width: Max(45%, 100rem);
-  font-size: clamp(0.5rem, 4vw, 1.3rem);
 
   &:hover {
     background: $primary-color;
-  }
-}
-
-.more-tag__btn {
-  padding: 0.5rem 1rem;
-  background: $light-blue-btn;
-  color: $primary-color;
-  font-weight: 500;
-  transition: all 250ms ease-in;
-
-  &:hover {
-    background: $primary-color;
-    color: $white-color;
   }
 }

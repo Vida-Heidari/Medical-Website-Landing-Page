@@ -87,6 +87,34 @@
       font-size: clamp(0.5rem, 4vw, 1.8rem);
       margin: 3rem 0;
     }
+
+    .hero__btns {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    .hero__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: Max(45%, 100rem);
+    }
+
+    .more-tag__btn {
+      padding: 0.5rem 1rem;
+      background: $light-blue-btn;
+      color: $primary-color;
+      font-weight: 500;
+      transition: all 250ms ease-in;
+
+      &:hover {
+        background: $primary-color;
+        color: $white-color;
+      }
+    }
   }
 }
 
@@ -96,3 +124,5 @@
 @import "./wecare";
 @import "./specialist";
 @import "./patient";
+@import "./subscribe";
+@import "./footer";

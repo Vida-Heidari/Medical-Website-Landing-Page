@@ -304,15 +304,17 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 2rem 2rem;
+  padding: 0 7rem;
+  margin: 0 auto;
 }
 
 #serach__area .search__area--wrapper .boxes .box {
@@ -348,13 +350,13 @@ i {
 }
 
 #serach__area .search__area--wrapper h4 {
-  padding: 2rem 7rem;
+  padding: 2rem 8rem;
   font-size: clamp(0.5rem, 4vw, 2rem);
 }
 
 #serach__area .search__area--wrapper .tags {
   width: 100%;
-  padding: 0 4rem;
+  padding: 0 7rem;
 }
 
 #serach__area .search__area--wrapper .tags .search-area__tags {
@@ -365,8 +367,9 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -430,7 +433,8 @@ i {
 
 #popular-search-area .popular-search__wrapper .popular-search__lists {
   border-right: 2px solid #014ed5;
-  width: 8%;
+  width: 10rem;
+  padding-right: 2rem;
 }
 
 #popular-search-area .popular-search__wrapper .popular-search__lists .search__list {
@@ -458,9 +462,6 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

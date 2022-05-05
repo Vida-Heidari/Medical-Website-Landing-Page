@@ -18,10 +18,13 @@
       width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      // justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-      gap: 2rem 2rem;
       flex-wrap: wrap;
+      gap: 2rem 2rem;
+      padding: 0 7rem;
+      margin: 0 auto;
 
       .box {
         width: 40%;
@@ -57,18 +60,18 @@
     }
 
     h4 {
-      padding: 2rem 7rem;
+      padding: 2rem 8rem;
       font-size: clamp(0.5rem, 4vw, 2rem);
     }
 
     .tags {
       width: 100%;
-      padding: 0 4rem;
+      padding: 0 7rem;
 
       .search-area__tags {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
         gap: 2rem 2rem;
         flex-wrap: wrap;

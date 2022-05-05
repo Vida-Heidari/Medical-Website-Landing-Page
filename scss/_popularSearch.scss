@@ -18,7 +18,8 @@
 
     .popular-search__lists {
       border-right: 2px solid $primary-color;
-      width: 8%;
+      width: 10rem;
+      padding-right: 2rem;
 
       .search__list {
         margin: 1.6rem 0;
@@ -40,7 +41,7 @@
     .popular-search__items {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      // justify-content: space-between;
       align-items: center;
       text-align: center;
       flex-wrap: wrap;

@@ -1,0 +1,50 @@
+#specialist__area {
+  margin-top: 10rem;
+
+  .specialist__wrapper {
+    .specialist__title {
+      text-align: center;
+
+      h2 {
+        font-size: clamp(1rem, 5vw, 4.5rem);
+        font-weight: 600;
+      }
+
+      p {
+        font-size: clamp(0.5rem, 4vw, 1.5rem);
+        color: $light-gray;
+        margin: 2rem 0 5rem;
+      }
+    }
+
+    .specialist__doctors {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .doctor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border-radius: $border-radius-md;
+        background: $light-gray-3;
+        padding: 2rem;
+        margin: 1.5rem;
+
+        .doctor__image {
+          background: $light-gray;
+          border-radius: $border-radius-md;
+
+          img {
+            width: Max(30rem, 20px);
+            transform: translateY(0.7rem);
+          }
+        }
+      }
+    }
+  }
+}

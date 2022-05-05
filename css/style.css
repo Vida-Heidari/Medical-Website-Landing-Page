@@ -148,6 +148,7 @@ i {
   position: fixed;
   top: 0;
   padding: 3rem;
+  z-index: 99;
 }
 
 .navbar .logo {
@@ -682,8 +683,8 @@ i {
 }
 
 #wecare-area .wecare__wrapper .wecare--left .wecare__image img {
-  -webkit-transform: translate(-10rem, 10rem);
-          transform: translate(-10rem, 10rem);
+  -webkit-transform: translate(-10rem, 5rem);
+          transform: translate(-10rem, 5rem);
 }
 
 #wecare-area .wecare__wrapper .wecare--left .wecare__box {
@@ -774,4 +775,72 @@ i {
 #wecare-area .wecare__wrapper .wecare--right .wecare__list .wecare__item i {
   font-size: 2.5rem;
   color: #014ed5;
+}
+
+#specialist__area {
+  margin-top: 10rem;
+}
+
+#specialist__area .specialist__wrapper .specialist__title {
+  text-align: center;
+}
+
+#specialist__area .specialist__wrapper .specialist__title h2 {
+  font-size: clamp(1rem, 5vw, 4.5rem);
+  font-weight: 600;
+}
+
+#specialist__area .specialist__wrapper .specialist__title p {
+  font-size: clamp(0.5rem, 4vw, 1.5rem);
+  color: #d9dddc;
+  margin: 2rem 0 5rem;
+}
+
+#specialist__area .specialist__wrapper .specialist__doctors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#specialist__area .specialist__wrapper .specialist__doctors .doctor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  background: #f6faf9;
+  padding: 2rem;
+  margin: 1.5rem;
+}
+
+#specialist__area .specialist__wrapper .specialist__doctors .doctor .doctor__image {
+  background: #d9dddc;
+  border-radius: 1rem;
+}
+
+#specialist__area .specialist__wrapper .specialist__doctors .doctor .doctor__image img {
+  width: Max(30rem, 20px);
+  -webkit-transform: translateY(0.7rem);
+          transform: translateY(0.7rem);
 }

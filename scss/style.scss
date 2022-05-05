@@ -15,6 +15,7 @@
   position: fixed;
   top: 0;
   padding: 3rem;
+  z-index: 99;
 
   .logo {
     width: 10%;
@@ -93,3 +94,4 @@
 @import "./popularSearch";
 @import "./findDoctor";
 @import "./wecare";
+@import "./specialist";

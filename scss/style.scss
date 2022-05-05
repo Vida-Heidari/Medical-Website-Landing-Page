@@ -43,9 +43,14 @@
         }
       }
 
-      // .rigth-li a {
-      //   border: 1px solid blue;
-      // }
+      .rigth-li .login {
+        transition: color 200ms ease-in;
+        font-weight: 600;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
 
       a {
         padding: 1rem 2rem;

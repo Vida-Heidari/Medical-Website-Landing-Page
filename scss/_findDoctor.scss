@@ -1,0 +1,145 @@
+#find-doctor {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  .find-doctor__wrapper {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2rem 2rem;
+    grid-template-areas: "find-doctor__content find-doctor__image";
+  }
+
+  .find-doctor__content {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+
+    .content--title {
+      h2 {
+        font-size: clamp(1rem, 5vw, 4.5rem);
+        font-weight: 600;
+      }
+
+      p {
+        font-size: clamp(0.5rem, 4vw, 1.5rem);
+        color: $light-text-color;
+        margin: 2rem 0 5rem;
+      }
+    }
+
+    .content__items {
+      .item {
+        margin: 2rem 0;
+
+        .item__title {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          i {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 0.9rem;
+          }
+        }
+
+        .item__info {
+          border-left: 2px solid $light-gray;
+          border-radius: $border-radius-sm;
+          padding: 2rem 3rem;
+          margin-left: 1.5rem;
+          margin-top: 1.5rem;
+          transition: 500ms;
+
+          &:hover {
+            border-color: $primary-color;
+            box-shadow: 0.5rem 0.3rem 2rem 0.5rem $light-blue;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .item1 i {
+        color: #7b4be3;
+        background: #eeeefd;
+      }
+
+      .item2 i {
+        color: #035cb7;
+        background: #e4ecfc;
+      }
+
+      .item3 i {
+        color: #12aa15;
+        background: #def7f7;
+      }
+    }
+  }
+
+  .find-doctor__image {
+    grid-area: 1 / 2 / 2 / 3;
+    position: relative;
+
+    img {
+      width: 100%;
+      padding-top: 5rem;
+    }
+
+    .search-doctor {
+      width: 30%;
+      background: linear-gradient(to top right, #fdfdfd 30%, #fff);
+      box-shadow: 0.5rem 0.3rem 2rem 0.5rem $light-blue;
+      border-radius: $border-radius-md;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      top: 25rem;
+      left: 5rem;
+
+      h4 {
+        margin-bottom: 2rem;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        background: $light-color-3;
+        border-radius: $border-radius-sm;
+        border: 1px solid $light-gray;
+        outline: none;
+        padding: 0 0.5rem;
+        margin: 0.5rem;
+
+        &:focus-within {
+          border: 1px solid $primary-color;
+        }
+
+        input {
+          width: 100%;
+          padding: 0.5rem 0;
+          background: transparent;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+
+    .doctor-search-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: clamp(0.3rem, 3vmin, 1rem);
+      margin-top: 1rem;
+    }
+  }
+}

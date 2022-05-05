@@ -1,0 +1,77 @@
+#patient__area {
+  margin: 10rem 0;
+  background: $light-blue;
+
+  .patient__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .patient__title {
+      width: 100%;
+      text-align: center;
+      padding-top: 10rem;
+
+      h2 {
+        font-size: clamp(1rem, 5vw, 4.5rem);
+        font-weight: 600;
+      }
+
+      p {
+        font-size: clamp(0.5rem, 4vw, 1.5rem);
+        color: $light-text-color;
+      }
+    }
+
+    .patient__info {
+      display: grid;
+      grid-auto-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+
+      .patient__image {
+        grid-area: 1 / 1 / 2 / 2;
+
+        img {
+          width: Max(60rem, 20px);
+        }
+      }
+
+      .patient__content {
+        grid-area: 1 / 2 / 2 / 3;
+        padding: 3rem;
+
+        .content__title {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 2rem;
+          .content__title--left {
+            img {
+              width: 10rem;
+            }
+          }
+        }
+
+        .title--right__rating {
+          i {
+            margin-right: 0;
+            transition: 300ms;
+
+            &:hover {
+              color: #fec565;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .content__about {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

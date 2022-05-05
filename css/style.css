@@ -232,7 +232,7 @@ i {
 }
 
 #hero .content p {
-  color: #bac4d5;
+  color: #a6adbb;
   font-size: clamp(0.5rem, 4vw, 1.8rem);
   margin: 3rem 0;
 }
@@ -409,7 +409,7 @@ i {
   margin: 1.6rem 0;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #d9dddc;
+  color: #a6adbb;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
@@ -504,7 +504,7 @@ i {
 
 #find-doctor .find-doctor__content .content--title p {
   font-size: clamp(0.5rem, 4vw, 1.5rem);
-  color: #bac4d5;
+  color: #a6adbb;
   margin: 2rem 0 5rem;
 }
 
@@ -784,7 +784,7 @@ i {
 
 #wecare-area .wecare__wrapper .wecare--right > p {
   font-size: clamp(0.5rem, 4vw, 1.5rem);
-  color: #bac4d5;
+  color: #a6adbb;
   margin: 2rem 0 5rem;
 }
 
@@ -825,7 +825,7 @@ i {
 
 #specialist__area .specialist__wrapper .specialist__title p {
   font-size: clamp(0.5rem, 4vw, 1.5rem);
-  color: #d9dddc;
+  color: #a6adbb;
   margin: 2rem 0 5rem;
 }
 

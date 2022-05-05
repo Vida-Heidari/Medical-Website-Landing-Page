@@ -84,12 +84,15 @@
     position: relative;
 
     img {
-      width: 100%;
+      // width: 100%;
+      width: Max(50rem, 50px);
+      transform: translateX(15rem);
       padding-top: 5rem;
     }
 
     .search-doctor {
-      width: 30%;
+      // width: 30%;
+      width: Max(20rem, 20px);
       background: linear-gradient(to top right, #fdfdfd 30%, #fff);
       box-shadow: 0.5rem 0.3rem 2rem 0.5rem $light-blue;
       border-radius: $border-radius-md;
@@ -100,10 +103,10 @@
       justify-content: center;
 
       position: absolute;
-      top: 25rem;
-      left: 5rem;
+      top: 17rem;
+      left: 2rem;
 
-      h4 {
+      h3 {
         margin-bottom: 2rem;
       }
 

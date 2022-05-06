@@ -502,6 +502,7 @@ i {
 #find-doctor {
   margin-top: 10rem;
   margin-bottom: 10rem;
+  padding: 2rem 0;
 }
 
 #find-doctor .find-doctor__wrapper {
@@ -513,8 +514,7 @@ i {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  gap: 2rem 2rem;
-      grid-template-areas: "find-doctor__content find-doctor__image";
+  gap: 2rem;
 }
 
 #find-doctor .find-doctor__content {
@@ -601,16 +601,21 @@ i {
   -ms-grid-column-span: 1;
   grid-area: 1 / 2 / 2 / 3;
   position: relative;
+  width: 70%;
+  height: 75%;
+  margin-left: auto;
+  border-radius: 43% 57% 29% 71% / 58% 44% 56% 42%;
+  background: #eff4ff;
+  background-image: url(../images/doctors/doctor5.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0 0 1.9rem #f8f8f8, 0 0 0 2rem #8198a083, 0 0 0 3.9rem #f8f8f8, 0 0 0 4rem #8198a083;
+          box-shadow: 0 0 0 1.9rem #f8f8f8, 0 0 0 2rem #8198a083, 0 0 0 3.9rem #f8f8f8, 0 0 0 4rem #8198a083;
+  margin-top: 5rem;
 }
 
-#find-doctor .find-doctor__image img {
-  width: Max(50rem, 50px);
-  -webkit-transform: translateX(15rem);
-          transform: translateX(15rem);
-  padding-top: 5rem;
-}
-
-#find-doctor .find-doctor__image .search-doctor {
+#find-doctor .search-doctor {
   width: Max(20rem, 20px);
   background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #fdfdfd), to(#fff));
   background: linear-gradient(to top right, #fdfdfd 30%, #fff);
@@ -632,15 +637,15 @@ i {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  top: 17rem;
-  left: 2rem;
+  top: 10rem;
+  left: -16rem;
 }
 
-#find-doctor .find-doctor__image .search-doctor h3 {
+#find-doctor .search-doctor h3 {
   margin-bottom: 2rem;
 }
 
-#find-doctor .find-doctor__image .search-doctor .box {
+#find-doctor .search-doctor .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,11 +667,11 @@ i {
   margin: 0.5rem;
 }
 
-#find-doctor .find-doctor__image .search-doctor .box:focus-within {
+#find-doctor .search-doctor .box:focus-within {
   border: 1px solid #014ed5;
 }
 
-#find-doctor .find-doctor__image .search-doctor .box input {
+#find-doctor .search-doctor .box input {
   width: 100%;
   padding: 1.5rem 0;
   background: transparent;
@@ -674,7 +679,7 @@ i {
   outline: none;
 }
 
-#find-doctor .find-doctor__image .doctor-search-btn {
+#find-doctor .doctor-search-btn {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

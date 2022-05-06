@@ -89,8 +89,10 @@
     margin-left: auto;
     border-radius: 43% 57% 29% 71% / 58% 44% 56% 42%;
     background: $light-blue;
-    background-image: url(../images/doctors/doctor5.png);
-    background-size: contain;
+    // background-image: url(../images/doctors/doctor5.png);
+    background-image: url(../images/doctors/doctor9.avif);
+    // background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 0 0 1.9rem #f8f8f8, 0 0 0 2rem #8198a083, 0 0 0 3.9rem #f8f8f8,

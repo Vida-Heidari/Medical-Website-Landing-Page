@@ -123,9 +123,9 @@
             <h2 popular-search__title>Popular Searches on Wecare</h2>
 
             <div class="popular-search__content">
-              <div class="popular-search__lists">
+              <div class="popular-search__lists tab">
                 <div class="search__list active">
-                  <a href="#" class="search__link">Specialties</a>
+                  <a href="#" class="search__link" "id="defaultOpen">Specialties</a>
                 </div>
                 <div class="search__list">
                   <a href="#" class="search__link">Conditions</a>
@@ -135,7 +135,8 @@
                 </div>
               </div>
 
-              <div class="popular-search__items">
+
+              <div class="popular-search__items tabContent" id="specialties">
                 <div class="box dermatology">
                   <img src="./images/icon/depilation.png" alt="" />
                   <h5>Dermatology</h5>
@@ -166,6 +167,14 @@
                   <h5>Otolaryngology</h5>
                 </div>
               </div>
+
+              <!-- <div id="conditions" class="tabContent">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse earum architecto, a tenetur pariatur illo!</p>
+              </div>
+
+              <div id="procedures" class="tabContent">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium corrupti nesciunt atque voluptate recusandae odio ut nobis, sapiente quis.</p>
+              </div> -->
             </div>
           </div>
         </div>
@@ -365,7 +374,10 @@ that matter most to you .
             <div class="specialist__doctors">
               <div class="doctor doctor1">
                 <div class="doctor__image">
-                  <img src="./images/doctors/doctor1.png" alt="">
+                  <img src="./images/doctors/doctor1.png" class="image" alt="">
+                  <div class="middle">
+                    <div class="text">View Profile</div>
+                  </div>
                 </div>
                 <div class="doctor__info">
                   <h4 class="doctor__name"><a href="#">Dr. Mark Miller</a></h4>
@@ -375,7 +387,10 @@ that matter most to you .
 
               <div class="doctor doctor2">
                 <div class="doctor__image">
-                  <img src="./images/doctors/doctor4.png" alt="">
+                  <img src="./images/doctors/doctor4.png" class="image" alt="">
+                  <div class="middle">
+                    <div class="text">View Profile</div>
+                  </div>
                 </div>
                 <div class="doctor__info">
                   <h4 class="doctor__name"><a href="#">Dr. Suzanne Holroyd</a></h4>
@@ -385,7 +400,10 @@ that matter most to you .
 
               <div class="doctor doctor3">
                 <div class="doctor__image">
-                  <img src="./images/doctors/doctor2.png" alt="">
+                  <img src="./images/doctors/doctor2.png" class="image" alt="">
+                  <div class="middle">
+                    <div class="text">View Profile</div>
+                  </div>
                 </div>
                 <div class="doctor__info">
                   <h4 class="doctor__name"><a href="#">Dr. John Kattwinkel</a></h4>
@@ -395,7 +413,10 @@ that matter most to you .
 
               <div class="doctor doctor4">
                 <div class="doctor__image">
-                  <img src="./images/doctors/doctor5.png" alt="">
+                  <img src="./images/doctors/doctor5.png" class="image" alt="">
+                  <div class="middle">
+                    <div class="text">View Profile</div>
+                  </div>
                 </div>
                 <div class="doctor__info">
                   <h4 class="doctor__name"><a href="#">Dr. Stacey Mills</a></h4>
@@ -405,7 +426,10 @@ that matter most to you .
 
               <div class="doctor doctor5">
                 <div class="doctor__image">
-                  <img src="./images/doctors/doctor3.png" alt="">
+                  <img src="./images/doctors/doctor3.png" class="image" alt="">
+                  <div class="middle">
+                    <div class="text">View Profile</div>
+                  </div>
                 </div>
                 <div class="doctor__info">
                   <h4 class="doctor__name"><a href="#">Dr. Richard Pearson</a></h4>
@@ -415,7 +439,10 @@ that matter most to you .
 
               <div class="doctor doctor6">
                 <div class="doctor__image">
-                  <img src="./images/doctors/doctor6.png" alt="">
+                  <img src="./images/doctors/doctor6.png" class="image" alt="">
+                  <div class="middle">
+                    <div class="text">View Profile</div>
+                  </div>
                 </div>
                 <div class="doctor__info">
                   <h4 class="doctor__name"><a href="#">Dr. James Larner</a></h4>
@@ -425,7 +452,10 @@ that matter most to you .
 
               <div class="doctor doctor7">
                 <div class="doctor__image">
-                  <img src="./images/doctors/doctor7.png" alt="">
+                  <img src="./images/doctors/doctor7.png" class="image" alt="">
+                  <div class="middle">
+                    <div class="text">View Profile</div>
+                  </div>
                 </div>
                 <div class="doctor__info">
                   <h4 class="doctor__name"><a href="#">Dr. David Jones</a></h4>
@@ -435,7 +465,10 @@ that matter most to you .
 
               <div class="doctor doctor8">
                 <div class="doctor__image">
-                  <img src="./images/doctors/doctor8.png" alt="">
+                  <img src="./images/doctors/doctor8.png" class="image" alt="">
+                  <div class="middle">
+                    <div class="text">View Profile</div>
+                  </div>
                 </div>
                 <div class="doctor__info">
                   <h4 class="doctor__name"><a href="#">Dr. William Steers</a></h4>
@@ -657,6 +690,7 @@ that matter most to you .
       </div>
     </footer>
 
-    <script src="./JavaScript/script.js"></script>
+    <script src="./JavaScript/goTopBtn.js"></script>
+    <!-- <script src="./JavaScript/popularSearch.js"></script> -->
   </body>
 </html>

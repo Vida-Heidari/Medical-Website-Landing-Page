@@ -32,16 +32,59 @@
         gap: 2rem;
         border-radius: $border-radius-md;
         background: $light-gray-3;
+        // background: $light-blue-2;
+        box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(128, 128, 128, 0.05);
         padding: 2rem;
         margin: 1.5rem;
 
         .doctor__image {
+          position: relative;
           background: $light-gray;
+          // background: #e4e7e6;
           border-radius: $border-radius-md;
 
           img {
             width: Max(30rem, 20px);
             transform: translateY(0.7rem);
+            transition: 500ms;
+          }
+
+          .middle {
+            opacity: 0;
+            position: absolute;
+            // top: 50%;
+            top: 10rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 500ms;
+
+            .text {
+              background: $primary-color;
+              color: $white-color;
+              border-radius: $border-radius-md;
+              padding: 1.5rem 3rem;
+              cursor: pointer;
+              transition: 500ms;
+            }
+          }
+        }
+        &:hover {
+          .image {
+            opacity: 0.5;
+            cursor: pointer;
+          }
+          .middle {
+            opacity: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &:hover {
+              .text {
+                background: $secondary-color;
+              }
+            }
           }
         }
       }

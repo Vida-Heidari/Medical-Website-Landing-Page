@@ -779,6 +779,7 @@ i {
   -webkit-box-shadow: 0.5rem 0.3rem 2rem 0.5rem #ccdfff;
           box-shadow: 0.5rem 0.3rem 2rem 0.5rem #ccdfff;
   width: 45%;
+  min-width: 15rem;
   position: absolute;
   top: 6rem;
   right: -15rem;
@@ -861,6 +862,7 @@ i {
   padding: 10rem 3rem;
   -ms-grid-column-align: end;
       justify-self: end;
+  margin-left: 8rem;
 }
 
 #wecare-area .wecare__wrapper .wecare--right h2 {

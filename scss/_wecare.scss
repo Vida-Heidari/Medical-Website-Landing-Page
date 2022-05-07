@@ -40,9 +40,11 @@
         background: linear-gradient(to top right, #fdfdfd 30%, #fff);
         box-shadow: 0.5rem 0.3rem 2rem 0.5rem $light-blue-btn;
         width: 45%;
+        min-width: 15rem;
         position: absolute;
         top: 6rem;
         right: -15rem;
+        // margin-right: 5rem;
 
         .box__item {
           display: flex;
@@ -89,6 +91,7 @@
       grid-area: 1 / 2 / 2 / 3;
       padding: 10rem 3rem;
       justify-self: end;
+      margin-left: 8rem;
 
       h2 {
         font-size: clamp(1rem, 5vw, 4.5rem);

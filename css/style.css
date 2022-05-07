@@ -1136,8 +1136,8 @@ i {
   color: #fff;
   text-align: center;
   border-radius: 1.5rem;
-  -webkit-box-shadow: 1rem 1rem 3rem 2rem #d6e1f3;
-          box-shadow: 1rem 1rem 3rem 2rem #d6e1f3;
+  -webkit-box-shadow: 0.5rem 0.5rem 2.3rem 1rem #d6e1f3;
+          box-shadow: 0.5rem 0.5rem 2.3rem 1rem #d6e1f3;
   margin: 0 auto;
 }
 

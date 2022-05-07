@@ -1108,6 +1108,11 @@ i {
 
 #subscribe__area {
   margin: 20rem 0;
+  padding: 5rem 0;
+}
+
+#subscribe__area .container {
+  padding: 5rem 0;
 }
 
 #subscribe__area .subscribe__wrapper {
@@ -1131,6 +1136,8 @@ i {
   color: #fff;
   text-align: center;
   border-radius: 1.5rem;
+  -webkit-box-shadow: 1rem 1rem 3rem 2rem #d6e1f3;
+          box-shadow: 1rem 1rem 3rem 2rem #d6e1f3;
   margin: 0 auto;
 }
 

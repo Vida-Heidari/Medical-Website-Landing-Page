@@ -1,6 +1,7 @@
 #patient__area {
   margin: 10rem 0;
   background: $light-blue;
+  // background: url("../images/backgrounds/service-bg2.jpg");
 
   .patient__wrapper {
     display: flex;
@@ -54,7 +55,12 @@
 
       .patient__content {
         grid-area: 1 / 2 / 2 / 3;
-        padding: 3rem;
+
+        background: $light-blue-btn;
+        opacity: 0.8;
+        border-radius: $border-radius-md;
+        padding: 3rem 1.5rem;
+        margin-left: 2rem;
 
         .content__title {
           display: flex;

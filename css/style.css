@@ -1088,7 +1088,11 @@ i {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1 / 2 / 2 / 3;
-  padding: 3rem;
+  background: #ccdfff;
+  opacity: 0.8;
+  border-radius: 1rem;
+  padding: 3rem 1.5rem;
+  margin-left: 2rem;
 }
 
 #patient__area .patient__wrapper .patient__info .patient__content .content__title {

@@ -202,7 +202,7 @@ i {
   height: 100vh;
   position: relative;
   width: 100%;
-  border-bottom: 1px solid #ccdfff;
+  border-bottom: 5px solid #ccdfff;
   border-radius: 60% / 10%;
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;

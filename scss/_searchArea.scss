@@ -95,6 +95,18 @@
             cursor: pointer;
           }
         }
+
+        .more-tag__btn {
+          background: $light-blue-btn;
+          padding: 0.5rem 1rem;
+          color: $primary-color;
+          font-weight: 500;
+          transition: 300ms;
+
+          &:hover {
+            background-color: $light-blue;
+          }
+        }
       }
     }
   }

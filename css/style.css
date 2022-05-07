@@ -417,6 +417,19 @@ i {
   cursor: pointer;
 }
 
+#serach__area .search__area--wrapper .tags .search-area__tags .more-tag__btn {
+  background: #ccdfff;
+  padding: 0.5rem 1rem;
+  color: #014ed5;
+  font-weight: 500;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#serach__area .search__area--wrapper .tags .search-area__tags .more-tag__btn:hover {
+  background-color: #eff4ff;
+}
+
 #popular-search-area {
   padding: 3rem 0;
 }

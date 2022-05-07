@@ -1133,8 +1133,7 @@ i {
 }
 
 #subscribe__area {
-  margin: 20rem 0;
-  padding: 5rem 0;
+  margin-bottom: 5rem;
 }
 
 #subscribe__area .container {
@@ -1157,7 +1156,7 @@ i {
           justify-content: center;
   height: 30rem;
   max-width: 120rem;
-  width: clamp(85%, 25vw, 120rem);
+  width: clamp(50%, 25vw, 120rem);
   background: #014ed5;
   color: #fff;
   text-align: center;

@@ -1,6 +1,5 @@
 #subscribe__area {
-  margin: 20rem 0;
-  padding: 5rem 0;
+  margin-bottom: 5rem;
 
   .container {
     padding: 5rem 0;
@@ -12,7 +11,7 @@
     justify-content: center;
     height: 30rem;
     max-width: 120rem;
-    width: clamp(85%, 25vw, 120rem);
+    width: clamp(50%, 25vw, 120rem);
     background: $primary-color;
     color: $white-color;
     text-align: center;

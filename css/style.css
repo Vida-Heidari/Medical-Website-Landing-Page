@@ -1017,6 +1017,7 @@ i {
 #patient__area .patient__wrapper .patient__title p {
   font-size: clamp(0.5rem, 4vw, 1.5rem);
   color: #a6adbb;
+  margin-bottom: 8rem;
 }
 
 #patient__area .patient__wrapper .patient__info {
@@ -1043,10 +1044,22 @@ i {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 1 / 1 / 2 / 2;
+  width: Min(100%, 50rem);
+  height: 100%;
+  background-color: #ccdfff;
+  border-radius: 22% 50% 20% 0%;
+  -webkit-box-shadow: 0 0 0 1.9rem #eff4ff, 0 0 0 2rem #8198a083;
+          box-shadow: 0 0 0 1.9rem #eff4ff, 0 0 0 2rem #8198a083;
 }
 
-#patient__area .patient__wrapper .patient__info .patient__image img {
-  width: Max(60rem, 20px);
+#patient__area .patient__wrapper .patient__info .patient__image .patient--img-file {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  background-image: url(../images/patient/patient.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #patient__area .patient__wrapper .patient__info .patient__content {

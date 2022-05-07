@@ -19,6 +19,7 @@
       p {
         font-size: clamp(0.5rem, 4vw, 1.5rem);
         color: $light-text-color;
+        margin-bottom: 8rem;
       }
     }
 
@@ -34,9 +35,20 @@
 
       .patient__image {
         grid-area: 1 / 1 / 2 / 2;
+        width: Min(100%, 50rem);
+        height: 100%;
+        background-color: $light-blue-btn;
+        border-radius: 22% 50% 20% 0%;
+        box-shadow: 0 0 0 1.9rem $light-blue, 0 0 0 2rem #8198a083;
 
-        img {
-          width: Max(60rem, 20px);
+        .patient--img-file {
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 1;
+          background-image: url(../images/patient/patient.png);
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
         }
       }
 

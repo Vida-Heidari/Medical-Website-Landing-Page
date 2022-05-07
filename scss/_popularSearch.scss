@@ -1,6 +1,11 @@
 #popular-search-area {
   padding: 3rem 0;
 
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .popular-search__wrapper {
     h2 {
       font-size: clamp(1rem, 5vw, 4.5rem);
@@ -50,7 +55,6 @@
     .popular-search__items {
       display: flex;
       flex-direction: row;
-      // justify-content: space-between;
       align-items: center;
       text-align: center;
       flex-wrap: wrap;
@@ -77,6 +81,7 @@
         &:hover {
           transform: translateY(-1rem);
           color: $primary-color;
+          box-shadow: 0.5rem 0.3rem 2rem 0.5rem $light-blue-4;
         }
       }
     }

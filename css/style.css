@@ -421,6 +421,11 @@ i {
   padding: 3rem 0;
 }
 
+#popular-search-area .container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 #popular-search-area .popular-search__wrapper h2 {
   font-size: clamp(1rem, 5vw, 4.5rem);
   font-weight: 600;
@@ -509,6 +514,8 @@ i {
   -webkit-transform: translateY(-1rem);
           transform: translateY(-1rem);
   color: #014ed5;
+  -webkit-box-shadow: 0.5rem 0.3rem 2rem 0.5rem #d6e1f3;
+          box-shadow: 0.5rem 0.3rem 2rem 0.5rem #d6e1f3;
 }
 
 #find-doctor {

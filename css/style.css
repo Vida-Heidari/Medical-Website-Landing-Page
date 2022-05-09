@@ -198,7 +198,8 @@ i {
 }
 
 #hero {
-  background: url(../images/backgrounds/hero-bg.jpg) no-repeat center center/cover;
+  background: linear-gradient(141deg, rgba(212, 232, 255, 0.95), rgba(212, 232, 255, 0.75)), url(../images/sections-img/DNA.jpg);
+  background-repeat: no-repeat;
   height: 100vh;
   position: relative;
   width: 100%;

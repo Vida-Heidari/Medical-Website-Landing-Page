@@ -211,6 +211,24 @@ i {
 
 #hero .content {
   padding: 0 10rem;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  -ms-grid-columns: (MinMax(0, 1fr))[2];
+      grid-template-columns: repeat(2, MinMax(0, 1fr));
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 2rem;
+  height: 100%;
+}
+
+#hero .content .content__left {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,22 +242,21 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
 }
 
-#hero .content h1 {
+#hero .content .content__left h1 {
   font-weight: 700;
   font-size: clamp(3rem, 5vw, 8rem);
 }
 
-#hero .content p {
+#hero .content .content__left p {
   color: #a6adbb;
   font-size: clamp(0.5rem, 4vw, 1.8rem);
   margin: 3rem 0;
 }
 
-#hero .content .hero__btns {
-  width: 50%;
+#hero .content .content__left .hero__btns {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +267,7 @@ i {
   gap: 3rem;
 }
 
-#hero .content .hero__btn {
+#hero .content .content__left .hero__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +281,7 @@ i {
   width: Max(45%, 100rem);
 }
 
-#hero .content .more-tag__btn {
+#hero .content .content__left .more-tag__btn {
   padding: 0.5rem 1rem;
   background: #ccdfff;
   color: #014ed5;
@@ -273,9 +290,33 @@ i {
   transition: all 250ms ease-in;
 }
 
-#hero .content .more-tag__btn:hover {
+#hero .content .content__left .more-tag__btn:hover {
   background: #014ed5;
   color: #fff;
+}
+
+#hero .content .content__right {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#hero .content .content__right .content__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hero .content .content__right .content__image img {
+  width: Min(100%, 50rem);
+  height: 80rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #serach__area {

@@ -313,7 +313,7 @@ i {
 }
 
 #hero .content .content__right .content__image img {
-  width: Min(100%, 50rem);
+  width: Min(100%, 65rem);
   height: 80rem;
   -o-object-fit: cover;
      object-fit: cover;

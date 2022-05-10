@@ -1277,11 +1277,6 @@ i {
 }
 
 @media screen and (max-width: 425px) {
-  #subscribe__area .subscribe__wrapper {
-    width: clamp(95%, 25vw, 120rem);
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
   #subscribe__area .subscribe__wrapper .subscribe__input--box input {
     width: 18rem;
   }

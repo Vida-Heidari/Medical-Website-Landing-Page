@@ -151,16 +151,39 @@
       .content__image {
         display: flex;
         justify-content: center;
+        width: 55rem;
 
-        img {
-          width: Min(100%, 65rem);
-          height: 80rem;
-          object-fit: cover;
-        }
+        // img {
+        //   width: Min(100%, 65rem);
+        //   height: 80rem;
+        //   object-fit: cover;
+        // }
       }
     }
   }
 }
+
+// @media screen and (max-width: 1300px) {
+//   #hero {
+//     .content {
+//       display: grid;
+//       grid-auto-columns: 1fr 1fr;
+//       grid-auto-rows: 1fr;
+//       grid-template-columns: 1fr;
+//       grid-template-rows: repeat(2, 1fr);
+//       gap: 2rem;
+//       grid-template-areas:
+//         "content__right"
+//         "content__left";
+//       .content__left {
+//         grid-area: content__left;
+//       }
+//       .content__right {
+//         grid-area: content__right;
+//       }
+//     }
+//   }
+// }
 
 @import "./searchArea";
 @import "./popularSearch";

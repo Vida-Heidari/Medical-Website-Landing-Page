@@ -310,13 +310,7 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#hero .content .content__right .content__image img {
-  width: Min(100%, 65rem);
-  height: 80rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 55rem;
 }
 
 #serach__area {

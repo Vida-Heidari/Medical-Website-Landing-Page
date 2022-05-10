@@ -1253,6 +1253,35 @@ i {
   margin: 0.5rem;
 }
 
+@media screen and (max-width: 1024px) {
+  #subscribe__area .subscribe__wrapper {
+    width: clamp(75%, 25vw, 120rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #subscribe__area .subscribe__wrapper {
+    width: clamp(90%, 25vw, 120rem);
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0 0.5rem 2.3rem #d6e1f3;
+            box-shadow: 0 0.5rem 2.3rem #d6e1f3;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #subscribe__area .subscribe__wrapper {
+    width: clamp(95%, 25vw, 120rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #subscribe__area .subscribe__wrapper .subscribe__input--box input {
+    width: 18rem;
+  }
+}
+
 #footer .footer__wrapper {
   display: -ms-grid;
   display: grid;

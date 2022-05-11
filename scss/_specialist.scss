@@ -25,15 +25,16 @@
       flex-wrap: wrap;
 
       .doctor {
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-template-columns: Repeat(auto-fill, MinMax(300px, 1fr));
-        grid-template-rows: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 2rem;
 
         border-radius: $border-radius-md;
         background: $light-gray-3;
         box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(128, 128, 128, 0.05);
+        text-align: center;
         padding: 2rem;
         margin: 1.5rem;
 
@@ -43,7 +44,7 @@
           border-radius: $border-radius-md;
 
           img {
-            width: Max(30rem, 20px);
+            width: Max(25rem, 20px);
             transform: translateY(0.7rem);
             transition: 500ms;
           }

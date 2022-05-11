@@ -999,6 +999,8 @@ i {
   position: relative;
   background: #d9dddc;
   border-radius: 1rem;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 #specialist__area .specialist__wrapper .specialist__doctors .doctor .doctor__image img {
@@ -1024,10 +1026,15 @@ i {
   background: #014ed5;
   color: #fff;
   border-radius: 1rem;
-  padding: 1.5rem 3rem;
+  padding: 1rem 2rem;
   cursor: pointer;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+#specialist__area .specialist__wrapper .specialist__doctors .doctor:hover .doctor__image {
+  background: #229cc3;
+  background: linear-gradient(45deg, rgba(34, 156, 195, 0.594275) 53%, rgba(45, 122, 253, 0.493435) 100%);
 }
 
 #specialist__area .specialist__wrapper .specialist__doctors .doctor:hover .image {

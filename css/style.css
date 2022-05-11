@@ -130,7 +130,7 @@ i {
           transform: translateY(-0.5rem);
 }
 
-.navbar {
+#header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,23 +154,46 @@ i {
   z-index: 99;
   -webkit-transition: 500ms;
   transition: 500ms;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
-.navbar.top {
+#header.top {
   background: transparent;
 }
 
-.navbar .logo {
+#header #nav-btn {
+  display: none;
+}
+
+#header .open-btn {
+  margin-left: auto;
+  background: #014ed5;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+#header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .navbar .logo {
   width: 10%;
   margin-right: 5rem;
   margin-top: 0.7rem;
 }
 
-.navbar nav {
+#header .navbar nav {
   width: 100%;
 }
 
-.navbar nav ul {
+#header .navbar nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,33 +204,53 @@ i {
   padding: 2rem 1rem;
 }
 
-.navbar nav ul li:nth-of-type(3) {
+#header .navbar nav ul li:nth-of-type(3) {
   margin-right: auto;
 }
 
-.navbar nav ul .left-li a {
+#header .navbar nav ul .left-li a {
   -webkit-transition: color 200ms ease-in;
   transition: color 200ms ease-in;
   font-weight: 600;
 }
 
-.navbar nav ul .left-li a:hover {
+#header .navbar nav ul .left-li a:hover {
   color: #014ed5;
 }
 
-.navbar nav ul .rigth-li .login {
+#header .navbar nav ul .rigth-li .login {
   -webkit-transition: color 200ms ease-in;
   transition: color 200ms ease-in;
   font-weight: 600;
 }
 
-.navbar nav ul .rigth-li .login:hover {
+#header .navbar nav ul .rigth-li .login:hover {
   color: #014ed5;
 }
 
-.navbar nav ul a {
+#header .navbar nav ul a {
   padding: 1rem 2rem;
   margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  #header .navbar #nav-btn {
+    display: block;
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 2rem;
+  }
+  #header .navbar nav {
+    display: none;
+  }
+  #header .navbar .logo {
+    width: 25%;
+    margin-right: 5rem;
+    margin-top: 0.7rem;
+  }
 }
 
 #hero {

@@ -33,12 +33,17 @@
     </button>
 
     <!--------------------------------Header and Hero -------------------------------->
-    <header id="hero">
-      <!-- <div class="container"> -->
-      <div class="navbar top">
+    <header id="header" class="top">
+      <div class="container">
+      <div class="navbar">
         <div class="logo">
           <img src="./images/logo/WeCare-Logo.png" alt="" />
         </div>
+
+        <button id="nav-btn" class="nav-btn open-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
         <nav>
           <ul>
             <li class="left-li"><a href="#find-doctor">Find a Doctor</a></li>
@@ -55,7 +60,7 @@
         </nav>
       </div>
 
-      <div class="content">
+      <!-- <div class="content">
         <div class="content__left">
           <h1>
             Feel better about
@@ -87,11 +92,52 @@
           </div>
         </div>
 
+      </div> -->
       </div>
-      <!-- </div> -->
     </header>
 <!-------------------------------- Main -------------------------------->
     <main id="main">
+      <!-------------------------------- Hero -------------------------------->
+      <div id="hero__area">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__main">
+              <div class="hero__left">
+                <h1>
+                  Feel better about
+                  finding healthcare
+                </h1>
+        
+                <p>
+                  At healthgrades, we take the guesswork out of finding the right
+                  doctors,
+                  hospitals, and care for you and your family.
+                </p>
+        
+                <div class="hero__btns">
+                  <div class="hero__btn btn btn__secondary">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <a href="#"> Profiles for Every Doctor in Amirica</a>
+                  </div>
+        
+                  <div class="hero__btn btn btn__secondary">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <a href="#">More Than 10 Million Patients Ratings</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero__right">
+                <div class="hero__image">
+                  <img src="./images/doctors/hero-doctor1.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__search"></div>
+          </div>
+        </div>
+      </div>
 
       <!-------------------------------- Search Area -------------------------------->
       <section id="serach__area">

@@ -969,6 +969,7 @@ i {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 3rem;
 }
 
 #specialist__area .specialist__wrapper .specialist__doctors .doctor {

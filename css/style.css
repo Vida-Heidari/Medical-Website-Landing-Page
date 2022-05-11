@@ -942,23 +942,28 @@ i {
 }
 
 @media screen and (max-width: 768px) {
-  .wecare__wrapper .wecare__image {
+  #wecare-area .wecare__wrapper .wecare__image {
     display: none;
   }
-  .wecare__wrapper .wecare__box {
+  #wecare-area .wecare__wrapper .wecare__box {
     display: none;
   }
-  .wecare__wrapper .wecare--right {
-    padding: 0;
+  #wecare-area .wecare__wrapper .wecare--right {
     -ms-grid-column-align: center;
         justify-self: center;
+    min-width: 30rem;
+    padding: 0;
+    padding-bottom: 2rem;
     margin-left: 0;
   }
-  .wecare__wrapper .wecare--right .wecare__btn {
+  #wecare-area .wecare__wrapper .wecare--right .wecare__btn {
     padding: 0.5rem 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: Min 100%, 5rem;
   }
 }

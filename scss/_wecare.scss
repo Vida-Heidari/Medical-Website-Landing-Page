@@ -122,23 +122,28 @@
 }
 
 @media screen and (max-width: 768px) {
-  .wecare__wrapper {
-    .wecare__image {
-      display: none;
-    }
-    .wecare__box {
-      display: none;
-    }
+  #wecare-area {
+    .wecare__wrapper {
+      .wecare__image {
+        display: none;
+      }
+      .wecare__box {
+        display: none;
+      }
 
-    .wecare--right {
-      padding: 0;
-      justify-self: center;
-      margin-left: 0;
+      .wecare--right {
+        justify-self: center;
+        min-width: 30rem;
+        padding: 0;
+        padding-bottom: 2rem;
+        margin-left: 0;
 
-      .wecare__btn {
-        padding: 0.5rem 1rem;
-        display: flex;
-        width: Min (100%, 5rem);
+        .wecare__btn {
+          padding: 0.5rem 1rem;
+          display: flex;
+          justify-content: center;
+          width: Min (100%, 5rem);
+        }
       }
     }
   }

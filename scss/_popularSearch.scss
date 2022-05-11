@@ -14,11 +14,18 @@
     }
 
     .popular-search__content {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 7rem;
-      flex-wrap: wrap;
+      display: grid;
+      grid-auto-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+      grid-template-columns: 1fr 8fr;
+      grid-template-rows: 1fr;
+      gap: 2rem;
+
+      // display: flex;
+      // flex-direction: row;
+      // align-items: center;
+      // gap: 7rem;
+      // flex-wrap: wrap;
 
       // .tab {
       //   a {
@@ -31,6 +38,11 @@
     }
 
     .popular-search__lists {
+      grid-area: 1 / 1 / 2 / 2;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       border-right: 2px solid $primary-color;
       width: 10rem;
       padding-right: 2rem;
@@ -53,13 +65,15 @@
     }
 
     .popular-search__items {
+      grid-area: 1 / 2 / 2 / 3;
       display: flex;
       flex-direction: row;
       align-items: center;
+
       text-align: center;
       flex-wrap: wrap;
       gap: 2rem 2rem;
-      width: 80%;
+      width: 100%;
 
       img {
         width: 4.8rem;
@@ -82,6 +96,48 @@
           transform: translateY(-1rem);
           color: $primary-color;
           box-shadow: 0.5rem 0.3rem 2rem 0.5rem $light-blue-4;
+        }
+      }
+    }
+  }
+}
+
+// --------------- Media Queries ------------
+@media screen and (max-width: 1024px) {
+  #popular-search-area {
+    .popular-search__wrapper {
+      .popular-search__content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 6fr;
+
+        .popular-search__lists {
+          grid-area: 1 / 1 / 2 / 2;
+
+          flex-direction: row;
+          width: 100%;
+          border-right: none;
+          border-bottom: 2px solid $primary-color;
+        }
+
+        .popular-search__items {
+          grid-area: 2 / 1 / 3 / 2;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #popular-search-area {
+    .popular-search__wrapper {
+      .popular-search__content {
+        .popular-search__items {
+          .box {
+            &:hover {
+              transform: translateX(1rem);
+            }
+          }
         }
       }
     }

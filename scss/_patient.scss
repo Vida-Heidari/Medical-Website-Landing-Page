@@ -25,37 +25,40 @@
     }
 
     .patient__info {
-      display: grid;
-      grid-auto-columns: 1fr;
-      grid-template-columns: Repeat(auto-fill, minmax(48%, 1fr));
-      grid-template-rows: 1fr;
-      gap: 2rem;
+      display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
+      max-width: fit-content;
+      margin: auto;
+
+      gap: 5rem;
       padding: 2rem;
 
+      & > div {
+        flex: 1 1 400px;
+      }
+
       .patient__image {
-        grid-area: 1 / 1 / 2 / 2;
-        margin-bottom: 2rem;
-        width: Min(100%, 50rem);
         height: 100%;
+        max-width: 50rem;
         background-color: $light-blue-btn;
         border-radius: 22% 50% 20% 0%;
         box-shadow: 0 0 0 1.9rem $light-blue, 0 0 0 2rem #8198a083;
+        margin-bottom: 2rem;
 
         .patient--img-file {
-          width: 100%;
-          height: 100%;
           aspect-ratio: 1;
           background-image: url(../images/patient/patient.png);
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
+          border-radius: 22% 50% 20% 0%;
         }
       }
 
       .patient__content {
-        grid-area: 1 / 2 / 2 / 3;
         margin-top: 2rem;
         background: $light-blue-btn;
         opacity: 0.8;
@@ -99,12 +102,8 @@
 }
 
 // --------------- Media Queries ------------
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .patient__info {
-    // .patient__content {
-    //   grid-area: 1/1/2/3;
-    // }
-
     .patient__image {
       display: none;
     }

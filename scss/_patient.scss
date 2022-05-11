@@ -103,9 +103,22 @@
 
 // --------------- Media Queries ------------
 @media screen and (max-width: 425px) {
-  .patient__info {
-    .patient__image {
-      display: none;
+  #patient__area {
+    margin: 1rem 0;
+    margin-top: 5rem;
+    .patient__wrapper {
+      .patient__title {
+        padding-top: 5rem;
+        p {
+          margin-bottom: 0rem;
+        }
+      }
+
+      .patient__info {
+        .patient__image {
+          display: none;
+        }
+      }
     }
   }
 }

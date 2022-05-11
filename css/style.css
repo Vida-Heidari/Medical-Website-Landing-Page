@@ -59,6 +59,18 @@ i {
   margin-right: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 .btn {
   position: relative;
   font-family: inherit;
@@ -1212,7 +1224,17 @@ i {
 }
 
 @media screen and (max-width: 425px) {
-  .patient__info .patient__image {
+  #patient__area {
+    margin: 1rem 0;
+    margin-top: 5rem;
+  }
+  #patient__area .patient__wrapper .patient__title {
+    padding-top: 5rem;
+  }
+  #patient__area .patient__wrapper .patient__title p {
+    margin-bottom: 0rem;
+  }
+  #patient__area .patient__wrapper .patient__info .patient__image {
     display: none;
   }
 }

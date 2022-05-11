@@ -773,6 +773,56 @@ i {
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 1024px) {
+  #find-doctor .find-doctor__wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  #find-doctor .find-doctor__wrapper .find-doctor__image {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  #find-doctor .find-doctor__wrapper .find-doctor__content {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #find-doctor {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  #find-doctor .find-doctor__wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  #find-doctor .find-doctor__wrapper .find-doctor__image {
+    display: none;
+  }
+  #find-doctor .find-doctor__wrapper .find-doctor__content {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+}
+
 #wecare-area {
   background: #eff4ff;
 }

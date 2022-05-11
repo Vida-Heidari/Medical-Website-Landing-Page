@@ -8,6 +8,7 @@
     grid-auto-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: Repeat(auto-fit, minmax(45%, 1fr));
     grid-template-rows: 1fr;
     gap: 2rem;
   }
@@ -152,5 +153,43 @@
     gap: 1rem;
     padding: clamp(0.3rem, 3vmin, 1rem);
     margin-top: 1rem;
+  }
+}
+
+// --------------- Media Queries ------------
+@media screen and (max-width: 1024px) {
+  #find-doctor {
+    .find-doctor__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      justify-content: center;
+      margin: auto;
+
+      .find-doctor__image {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .find-doctor__content {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #find-doctor {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .find-doctor__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+
+      .find-doctor__image {
+        display: none;
+      }
+
+      .find-doctor__content {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+    }
   }
 }

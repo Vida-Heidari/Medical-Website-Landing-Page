@@ -1003,6 +1003,10 @@ i {
   background: #eff4ff;
 }
 
+#wecare-area .container {
+  padding: 1rem 0;
+}
+
 #wecare-area .wecare__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

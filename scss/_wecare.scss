@@ -1,6 +1,10 @@
 #wecare-area {
   background: $light-blue;
 
+  .container {
+    padding: 1rem 0;
+  }
+
   .wecare__wrapper {
     display: flex;
     flex-direction: row;

@@ -204,11 +204,11 @@ i {
   padding: 2rem 1rem;
 }
 
-#header .navbar nav ul a {
+#header .navbar nav ul .header__link {
   position: relative;
 }
 
-#header .navbar nav ul a::before {
+#header .navbar nav ul .header__link::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -226,7 +226,7 @@ i {
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
-#header .navbar nav ul a:hover::before {
+#header .navbar nav ul .header__link:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: left;

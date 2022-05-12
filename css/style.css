@@ -218,6 +218,8 @@ i {
   background-color: #014ed5;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
   -webkit-transition: -webkit-transform 300ms ease-in-out;
   transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
@@ -227,6 +229,8 @@ i {
 #header .navbar nav ul a:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 #header .navbar nav ul li:nth-of-type(3) {

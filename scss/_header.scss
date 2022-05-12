@@ -61,13 +61,13 @@
             height: 0.1rem;
             background-color: $primary-color;
             transform: scaleX(0);
-            // transform-origin: right;
+            transform-origin: right;
             transition: transform 300ms ease-in-out;
           }
 
           &:hover::before {
             transform: scaleX(1);
-            // transform-origin: left;
+            transform-origin: left;
           }
         }
 

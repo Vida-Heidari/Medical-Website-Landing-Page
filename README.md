@@ -33,8 +33,7 @@ This is the HTML Template, only provide front-end HTML interface NO back-end for
 - [HTML5](https://html.spec.whatwg.org/multipage/)
 - [CSS3](https://www.w3.org/Style/CSS/Overview.en.html)
 - [JavaScript](https://www.javascript.com/)
-
-  <!-- PAGES -->
+- [Sass](https://sass-lang.com/)
 
   <!-- ROADMAP -->
 
@@ -42,9 +41,8 @@ This is the HTML Template, only provide front-end HTML interface NO back-end for
 
 - [&#xD7;] Implement Landing page
 - [&#xD7;] Add features list
-- [ ] Implement Sign Up/Sign In page
+- [ ] Implement Sign In page
 - [ ] Implement Sign Up page
-- [ ] Add other pages
 
 <!-- CONTRIBUTING -->
 

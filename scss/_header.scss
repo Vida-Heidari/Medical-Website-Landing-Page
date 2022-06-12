@@ -148,6 +148,10 @@
         position: absolute;
         right: 2rem;
         border-radius: $border-radius-sm;
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
 
       nav {

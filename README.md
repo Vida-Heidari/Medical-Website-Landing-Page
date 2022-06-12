@@ -26,7 +26,7 @@
 
   <h5 align="center">We Care</h5>
 
-This is the HTML Template, only provide front-end HTML interface NO back-end for NFT Marketplace traders and creators.
+This is the HTML Template, only provide front-end HTML interface NO back-end.
 
 ### Built With
 

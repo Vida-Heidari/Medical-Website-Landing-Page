@@ -46,11 +46,9 @@ img {
 }
 
 .container {
-  max-width: 200rem;
-  width: 100vw;
-  padding: 0 10rem;
+  width: Min(90%, 160rem);
   margin: 0 auto;
-  overflow: auto;
+  padding: 0 1rem;
 }
 
 @media screen and (max-width: 768px) {

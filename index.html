@@ -186,58 +186,57 @@
             <h2 popular-search__title>Popular Searches on Wecare</h2>
 
             <div class="popular-search__content">
-              <div class="popular-search__lists tab">
-                <div class="search__list active">
-                  <a href="#" class="search__link" "id="defaultOpen">Specialties</a>
-                </div>
-                <div class="search__list">
-                  <a href="#" class="search__link">Conditions</a>
-                </div>
-                <div class="search__list">
-                  <a href="#" class="search__link">Procedures</a>
+              <ul class="popular-search__tab">
+                <li data-tab-target="#content1" class="tab-link active-tab">Specialties</li>
+
+                <li data-tab-target="#content2" class="tab-link">Conditions</li>
+
+                <li data-tab-target="#content3" class="tab-link">
+                  Procedures
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="content1" class="popular-search__tab-content active-content" data-tab-content>
+                  <div class="boxes">
+                    <div class="box dermatology">
+                    <img src="./images/icon/depilation.png" alt="" />
+                    <h5>Dermatology</h5>
+                    </div>
+                  <div class="box internal-medicine">
+                    <img src="./images/icon/lungs.png" alt="" />
+                    <h5>Internal Medicine</h5>
+                  </div>
+
+                  <div class="box neurology">
+                    <img src="./images/icon/brain.png" alt="" />
+                    <h5>Neurology</h5>
+                  </div>
+
+                  <div class="box general-medicine">
+                    <img src="./images/icon/medicine.png" alt="" />
+                    <h5>General Medicine</h5>
+                  </div>
+
+                  <div class="box dentisty">
+                    <img src="./images/icon/molar-tooth.png" alt="" />
+                    <h5>Dentisty</h5>
+                  </div>
+
+                  <div class="box otolaryngology">
+                    <img src="./images/icon/nose.png" alt="" />
+                    <h5>Otolaryngology</h5>
+                  </div>
                 </div>
               </div>
 
-
-              <div class="popular-search__items tabContent" id="specialties">
-                <div class="box dermatology">
-                  <img src="./images/icon/depilation.png" alt="" />
-                  <h5>Dermatology</h5>
-                </div>
-
-                <div class="box internal-medicine">
-                  <img src="./images/icon/lungs.png" alt="" />
-                  <h5>Internal Medicine</h5>
-                </div>
-
-                <div class="box neurology">
-                  <img src="./images/icon/brain.png" alt="" />
-                  <h5>Neurology</h5>
-                </div>
-
-                <div class="box general-medicine">
-                  <img src="./images/icon/medicine.png" alt="" />
-                  <h5>General Medicine</h5>
-                </div>
-
-                <div class="box dentisty">
-                  <img src="./images/icon/molar-tooth.png" alt="" />
-                  <h5>Dentisty</h5>
-                </div>
-
-                <div class="box otolaryngology">
-                  <img src="./images/icon/nose.png" alt="" />
-                  <h5>Otolaryngology</h5>
-                </div>
+              <div id="content2" class="popular-search__tab-content" data-tab-content>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, non.</p>
               </div>
-
-              <!-- <div id="conditions" class="tabContent">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse earum architecto, a tenetur pariatur illo!</p>
+              <div id="content3" class="popular-search__tab-content" data-tab-content>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nulla perferendis asperiores beatae? Quae odio facere, modi libero suscipit a, itaque cumque ratione, fugit laudantium aut velit esse incidunt aliquam?
               </div>
-
-              <div id="procedures" class="tabContent">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium corrupti nesciunt atque voluptate recusandae odio ut nobis, sapiente quis.</p>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -754,7 +753,7 @@ that matter most to you .
     </footer>
 
     <script src="./JavaScript/goTopBtn.js"></script>
-    <!-- <script src="./JavaScript/popularSearch.js"></script> -->
+    <script src="./JavaScript/popularSearch.js"></script>
     <script src="./JavaScript/header.js"></script>
     <script src="./JavaScript/menu.js"></script>
 

@@ -1,28 +1,24 @@
-const btns = document.querySelectorAll(".search__link");
+const tabs = document.querySelectorAll("[data-tab-target]");
 
-btns.addEventListener("click", function (evt, tabName) {
-  // Declare all variables
-  let i;
-  let tabContent;
-  let search__link;
+const tabContents = document.querySelectorAll("[data-tab-content]");
 
-  // Get all elements with class="tabcontent" and hide them
-  tabContent = document.getElementsByClassName("tabContent");
-  for (i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none";
-  }
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    //Change Active Tabe Color
+    tabs.forEach((e) => {
+      e.classList.remove("active-tab");
+    });
+    tab.classList.add("active-tab");
 
-  // Get all elements with class="search__link" and remove the class "active"
+    // Tab We Clicked on
+    const target = document.querySelector(tab.dataset.tabTarget);
 
-  search__link = document.getElementsByClassName("search__link");
-  for (i = 0; i < search__link.length; i++) {
-    search__link[i].className = search__link[i].className.replace("active", "");
-  }
+    // Making All The Tabs Disappear
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("active-content");
+    });
 
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += "active";
-
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+    // Only Show the Content Of That Tab we Clicked
+    target.classList.add("active-content");
+  });
 });

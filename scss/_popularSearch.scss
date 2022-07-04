@@ -20,26 +20,10 @@
       grid-template-columns: 1fr 8fr;
       grid-template-rows: 1fr;
       gap: 2rem;
-
-      // display: flex;
-      // flex-direction: row;
-      // align-items: center;
-      // gap: 7rem;
-      // flex-wrap: wrap;
-
-      // .tab {
-      //   a {
-      //     display: block;
-      //   }
-      //   a.active {
-      //     background-color: #ccc;
-      //   }
-      // }
     }
 
-    .popular-search__lists {
+    .popular-search__tab {
       grid-area: 1 / 1 / 2 / 2;
-
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -47,33 +31,35 @@
       width: 10rem;
       padding-right: 2rem;
 
-      .search__list {
+      .tab-link {
         margin: 1.6rem 0;
         font-size: 1.5rem;
         font-weight: 600;
         color: $light-text-color;
         transition: 500ms;
+        cursor: pointer;
 
-        &:nth-of-type(1) {
-          color: $secondary-color;
+        &:hover:not(.active-tab) {
+          color: lighten($secondary-color, 30%);
         }
+      }
 
-        &:hover {
-          color: $secondary-color;
-        }
+      .active-tab {
+        color: $secondary-color;
       }
     }
 
-    .popular-search__items {
-      grid-area: 1 / 2 / 2 / 3;
+    .boxes {
       display: flex;
       flex-direction: row;
+      justify-content: center;
       align-items: center;
 
       text-align: center;
       flex-wrap: wrap;
       gap: 2rem 2rem;
       width: 100%;
+      height: 100%;
 
       img {
         width: 4.8rem;
@@ -99,6 +85,23 @@
         }
       }
     }
+
+    .popular-search__tab-content {
+      grid-area: 1 / 2 / 2 / 3;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    [data-tab-content] {
+      display: none;
+    }
+
+    .active-content[data-tab-content] {
+      display: flex;
+    }
   }
 }
 
@@ -108,9 +111,9 @@
     .popular-search__wrapper {
       .popular-search__content {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 6fr;
+        grid-template-rows: auto 1fr;
 
-        .popular-search__lists {
+        .popular-search__tab {
           grid-area: 1 / 1 / 2 / 2;
 
           flex-direction: row;
@@ -119,7 +122,7 @@
           border-bottom: 2px solid $primary-color;
         }
 
-        .popular-search__items {
+        .popular-search__tab-content {
           grid-area: 2 / 1 / 3 / 2;
           justify-content: center;
         }
@@ -132,7 +135,7 @@
   #popular-search-area {
     .popular-search__wrapper {
       .popular-search__content {
-        .popular-search__items {
+        .popular-search__tab {
           .box {
             &:hover {
               transform: translateX(1rem);

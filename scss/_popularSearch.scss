@@ -136,6 +136,7 @@
     .popular-search__wrapper {
       .popular-search__content {
         .popular-search__tab {
+          gap: 1rem;
           .box {
             &:hover {
               transform: translateX(1rem);

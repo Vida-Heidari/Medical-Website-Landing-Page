@@ -288,6 +288,11 @@ img {
     visibility: visible;
   }
 }
+@media screen and (max-width: 425px) {
+  #header .navbar .logo {
+    width: 40%;
+  }
+}
 #hero__area {
   margin-bottom: 20rem;
   background: linear-gradient(141deg, rgba(212, 232, 255, 0.95), rgba(212, 232, 255, 0.75)), url(../images/sections-img/DNA.jpg);
@@ -389,6 +394,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  gap: 0.5rem;
   width: 40%;
   min-width: 20rem;
   background: #fafbfe;
@@ -597,6 +603,9 @@ img {
   }
 }
 @media screen and (max-width: 576px) {
+  #popular-search-area .popular-search__wrapper .popular-search__content .popular-search__tab {
+    gap: 1rem;
+  }
   #popular-search-area .popular-search__wrapper .popular-search__content .popular-search__tab .box:hover {
     transform: translateX(1rem);
   }
@@ -631,9 +640,10 @@ img {
   margin: 2rem 0;
 }
 #find-doctor .find-doctor__content .content__items .item .item__title {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
+  gap: 1rem;
 }
 #find-doctor .find-doctor__content .content__items .item .item__title i {
   width: 3.5rem;
@@ -1140,7 +1150,7 @@ img {
 }
 @media screen and (max-width: 576px) {
   #subscribe__area .subscribe__wrapper {
-    width: clamp(90%, 25vw, 120rem);
+    width: clamp(100%, 25vw, 120rem);
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0.5rem 2.3rem #d6e1f3;

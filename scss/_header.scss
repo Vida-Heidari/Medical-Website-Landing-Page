@@ -18,10 +18,6 @@
     background: transparent;
   }
 
-  // #nav-btn {
-
-  // }
-
   .close-btn,
   .open-btn {
     display: none;
@@ -29,7 +25,6 @@
 
   .open-btn {
     margin-left: auto;
-    // background: transparent;
     background: $primary-color;
     border: none;
     outline: none;
@@ -210,6 +205,16 @@
           opacity: 1;
           visibility: visible;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #header {
+    .navbar {
+      .logo {
+        width: 40%;
       }
     }
   }

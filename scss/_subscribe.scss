@@ -67,7 +67,7 @@
 @media screen and (max-width: 576px) {
   #subscribe__area {
     .subscribe__wrapper {
-      width: clamp(90%, 25vw, 120rem);
+      width: clamp(100%, 25vw, 120rem);
       margin-left: auto;
       margin-right: auto;
       box-shadow: 0 0.5rem 2.3rem $light-blue-4;
